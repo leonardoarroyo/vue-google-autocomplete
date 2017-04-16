@@ -1,10 +1,10 @@
 <template>
-    <input
-        :class="classname"
-        :id="id"
-        :placeholder="placeholder"
-        @focus = "geolocate()"
-    />
+    <v-text-field
+      :class="classname"
+      :id="id"
+      :label="placeholder"
+      @focus = "geolocate()"
+    ></v-text-field>
 </template>
 
 <script>
@@ -63,8 +63,10 @@
             };
           }
 
+          var input = document.getElementById(this.id).getElementsByTagName('input')[0];
+          input.placeholder = "";
           this.autocomplete = new google.maps.places.Autocomplete(
-                document.getElementById(this.id),
+                input,
                 options
             );
 

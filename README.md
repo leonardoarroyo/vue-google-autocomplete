@@ -1,6 +1,6 @@
-# Vue Google Autocomplete
+# Vuetify Google Autocomplete
 
-A Vue.js (2.x) autosuggest component for the Google Maps Places API.
+A fork of [vue-google-autocomplete](https://github.com/olefirenko/vue-google-autocomplete) which uses `v-text-field` instead of regular `input`.
 
 ## Demo
 
