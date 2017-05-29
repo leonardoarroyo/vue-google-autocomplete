@@ -72,7 +72,7 @@
             };
           }
 
-          var input = document.getElementById(this.id).getElementsByTagName('input')[0];
+          var input = document.getElementById(this.id);
           input.placeholder = "";
           this.autocomplete = new google.maps.places.Autocomplete(
                 input,
