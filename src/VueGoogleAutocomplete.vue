@@ -3,6 +3,7 @@
       :class="classname"
       :id="id"
       :label="placeholder"
+      :light="light"
       @focus = "geolocate()"
       @blur="onBlur()"
       @change="onChange"
@@ -38,6 +39,11 @@
           },
 
           enableGeolocation: {
+            type: Boolean,
+            default: false
+          },
+
+          light: {
             type: Boolean,
             default: false
           }
